@@ -18,9 +18,10 @@
 #### Notice that that the charge for the first 500 seconds it's 0,01$ then for the next 501 to 800 seconds it's 0,008 and then it's 0,005$
 
 how_many_seconds = int(input("How many seconds was the call duration? "))
+
 if how_many_seconds <= 500:
     monthly_bill = how_many_seconds * 0.01
 elif how_many_seconds > 500 and how_many_seconds <= 800:
-    monthly_bill = 500 * 0.01 + (how_many_seconds - 500) * 0.008 # not quite sure here if it's correct
+    monthly_bill = float(500 * 0.01 + (how_many_seconds - 500) * 0.008) # not quite sure here if it's correct
 
 print(f"Total amount: ${monthly_bill}")

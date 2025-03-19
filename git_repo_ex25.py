@@ -17,6 +17,8 @@
 flipped_coin = input("Enter heads or tails: ")
 head_count = 0
 tails_count = 0
+head_count_percentage = 0
+tails_count_percentage = 0
 sum_of_flips = head_count + tails_count
 
 if flipped_coin == "heads":
